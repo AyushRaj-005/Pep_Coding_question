@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n,max=0;
+    int n,min=9;
 
     cin>>n;
 
@@ -11,13 +11,13 @@ int main()
     {
         int digit=n%10;
 
-        if(digit>max)
-            max=digit;
+        if(digit<min)
+            min=digit;
 
         n=n/10;
     }
 
-    cout<<max;
+    cout<<min;
 
     return 0;
 }
